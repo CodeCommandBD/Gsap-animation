@@ -247,6 +247,24 @@
   .z-30 {
     z-index: 30;
   }
+  .container {
+    width: 100%;
+    @media (width >= 40rem) {
+      max-width: 40rem;
+    }
+    @media (width >= 48rem) {
+      max-width: 48rem;
+    }
+    @media (width >= 64rem) {
+      max-width: 64rem;
+    }
+    @media (width >= 80rem) {
+      max-width: 80rem;
+    }
+    @media (width >= 96rem) {
+      max-width: 96rem;
+    }
+  }
   .mb-5 {
     margin-bottom: calc(var(--spacing) * 5);
   }
@@ -256,11 +274,17 @@
   .hidden {
     display: none;
   }
+  .table {
+    display: table;
+  }
   .h-\[10vh\] {
     height: 10vh;
   }
   .h-screen {
     height: 100vh;
+  }
+  .w-1 {
+    width: calc(var(--spacing) * 1);
   }
   .w-1\/2 {
     width: calc(1/2 * 100%);
